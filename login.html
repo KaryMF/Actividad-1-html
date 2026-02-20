@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Iniciar sesión — Un Rincón para Desconectar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Un Rincón para Desconectar</h1>
+                <p class="subtitle">Recobra tus energías explorando los destinos más hermosos de Asia</p>
+            </div>
+        </header>
+
+        <main style="display:flex;align-items:center;justify-content:center;min-height:60vh;">
+            <div class="modal-content" style="position:static;box-shadow:none;">
+                <h3>Iniciar sesión</h3>
+                <form id="loginForm">
+                    <label for="username">Nombre</label>
+                    <input type="text" id="username" name="username" placeholder="Tu nombre" required>
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña proporcionada" required>
+
+                    <div id="loginError" class="login-error" aria-live="polite" style="margin-top:10px;color:#8B2E2E;"></div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Destinos Turísticos de Asia</p>
+        </footer>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
